@@ -483,258 +483,144 @@ footer{
     height: 50px;
     cursor: pointer;
 }
-
-/* ========== Responsive Design ========== */
-
-/* General responsive settings */
-@media (max-width: 1200px) {
-    .right-container img {
-        width: 500px;
-    }
-    
-    .classimage img, .assignimg img {
-        width: 400px;
-        height: 250px;
-    }
-    
-    .features p {
-        width: 60%;
-        margin-left: 10em;
-    }
-}
-
-@media (max-width: 992px) {
-    .container {
-        flex-direction: column;
-        text-align: center;
-        margin-top: 2em;
-    }
-    
-    .left-container h1 {
-        padding-left: 0;
-        font-size: 4em;
-    }
-    
-    .paragraph {
-        width: 90%;
-        padding-left: 0;
-        margin: 2em auto;
-    }
-    
-    .paragraph p {
-        padding-left: 0;
-    }
-    
-    .btn-start {
-        margin-left: 0;
-    }
-    
-    .right-container {
-        margin-right: 0;
-        margin-top: 2em;
-    }
-    
-    .right-container img {
-        width: 400px;
-    }
-    
-    .student-class, .assignment {
-        flex-direction: column;
-        gap: 2em;
-        padding-left: 0;
-        text-align: center;
-    }
-    
-    .classimage img, .assignimg img {
-        margin-left: 0;
-        margin-right: 0;
-        width: 80%;
-        max-width: 400px;
-    }
-    
-    .class-container p, .assignment-container p {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    .description {
-        flex-direction: column;
-        height: auto;
-        padding-bottom: 2em;
-    }
-    
-    .descri-about {
-        width: 80%;
-        margin: 0 auto;
-    }
-    
-    .descri-info {
-        justify-content: center;
-    }
-}
-
+/* ✅ Mobile View Fix (max-width: 768px) */
 @media (max-width: 768px) {
-    nav {
-        flex-direction: column;
-        padding: 1em 0;
-    }
-    
-    .nav-left {
-        margin-left: 0;
-        width: 100%;
-        text-align: center;
-    }
-    
-    .nav-right {
-        margin-right: 0;
-        width: 100%;
-        margin-top: 1em;
-    }
-    
-    .nav-right ol {
-        justify-content: center;
-        gap: 1.5em;
-        padding: 0 1em;
-    }
-    
-    .left-container h1 {
-        font-size: 3em;
-    }
-    
-    .right-container img {
-        width: 300px;
-    }
-    
-    .our-achievement h1 {
-        font-size: 2.5em;
-    }
-    
-    .collections {
-        flex-direction: column;
-        gap: 2em;
-        margin: 2em 1em;
-    }
-    
-    .features h1 {
-        font-size: 2.5em;
-    }
-    
-    .features p {
-        width: 80%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    
-    footer {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-        height: auto;
-        text-align: center;
-    }
-    
-    .firstdiv, .seconddiv, .thirddiv, .fourdiv {
-        grid-row: auto;
-        padding: 1em 0;
-    }
-    
-    .seconddiv h1, .thirddiv h1, .fourdiv h1 {
-        margin-left: 0;
-        margin-top: 1em;
-    }
-    
-    .seconddiv h4, .thirddiv h4 {
-        margin: 1em 0;
-    }
-    
-    .icondiv, .avai-icon {
-        justify-content: center;
-        margin-left: 0;
-    }
-    
-    .logo img {
-        margin: 1em auto;
-    }
-}
+  nav {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
 
-@media (max-width: 576px) {
-    .left-container h1 {
-        font-size: 2.5em;
-    }
-    
-    .paragraph p {
-        font-size: 1.1em;
-    }
-    
-    .btn-start, .class-container button, .assignment-container button {
-        font-size: 1.2em;
-        width: 7em;
-    }
-    
-    .our-achievement h1, .features h1 {
-        font-size: 2em;
-    }
-    
-    .school h1 {
-        font-size: 1.5em;
-    }
-    
-    .school img {
-        height: 60px;
-    }
-    
-    .descri-about {
-        width: 90%;
-    }
-    
-    .descri-about p {
-        font-size: 1.1em;
-    }
-    
-    .nav-right ol {
-        flex-wrap: wrap;
-    }
-    
-    .btn-signup {
-        padding: 0.5em 1em;
-    }
-}
+  .nav-left,
+  .nav-right {
+    width: 100%;
+    margin: 0;
+    text-align: center;
+  }
 
-/* Mobile landscape and portrait specific adjustments */
-@media (max-width: 480px) {
-    .left-container h1 {
-        font-size: 2em;
-        line-height: 1.2em;
-    }
-    
-    .right-container img {
-        width: 250px;
-    }
-    
-    .classimage img, .assignimg img {
-        height: 200px;
-    }
-    
-    .head h1 {
-        font-size: 3em;
-    }
-    
-    .head h2 {
-        font-size: 1.2em;
-    }
-}
+  .nav-right ol {
+    flex-direction: column;
+    gap: 0.8em;
+    padding: 0;
+  }
 
-/* Very small devices */
-@media (max-width: 360px) {
-    .left-container h1 {
-        font-size: 1.8em;
-    }
-    
-    .nav-right ol {
-        gap: 1em;
-    }
-    
-    ol li a {
-        font-size: 1em;
-    }
+  .nav-right ol li {
+    margin: 0.4em 0;
+  }
+
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 2em 1em;
+  }
+
+  .left-container h1 {
+    font-size: 1.8em;
+    padding: 0;
+    line-height: 1.2em;
+  }
+
+  .paragraph {
+    width: 100%;
+    padding: 0;
+    margin: 1em auto;
+  }
+
+  .paragraph p {
+    font-size: 1.1em;
+    padding: 0 1em;
+  }
+
+  .btn-start {
+    font-size: 1em;
+    width: 80%;
+    margin: 1em auto;
+    display: block;
+  }
+
+  .right-container {
+    width: 100%;
+    margin-top: 2em;
+  }
+
+  .right-container img {
+    width: 90%;
+    height: auto;
+  }
+
+  .collections {
+    flex-direction: column;
+    gap: 2em;
+    margin: 2em 1em;
+  }
+
+  .features h1,
+  .our-achievement h1 {
+    font-size: 2em;
+  }
+
+  .features p {
+    font-size: 1em;
+    width: 90%;
+    margin: auto;
+  }
+
+  .student-class,
+  .assignment {
+    flex-direction: column;
+    gap: 2em;
+    padding: 1em;
+  }
+
+  .classimage img,
+  .assignimg img {
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .class-container p,
+  .assignment-container p {
+    width: 90%;
+    font-size: 1em;
+  }
+
+  .class-container button,
+  .assignment-container button {
+    font-size: 1em;
+    width: 80%;
+    margin: 1em auto;
+    display: block;
+  }
+
+  .description {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .descri-about {
+    width: 90%;
+    margin: 1em auto;
+  }
+
+  footer {
+    grid-template-columns: 1fr;
+    padding: 2em 1em;
+    text-align: center;
+  }
+
+  .seconddiv h4,
+  .thirddiv h4 {
+    margin: 0.5em 0;
+  }
+
+  .avai-icon {
+    flex-direction: row;
+    justify-content: center;
+    margin: 1em 0;
+  }
+
+  .about h1 {
+    font-size: 1em;
+  }
 }
