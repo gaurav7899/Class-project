@@ -1,0 +1,207 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'main/images/favicon-32x32.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Class</title>
+</head>
+<body>
+    <div class="circle-cursor" id="cursor"></div>
+    <!-- cursor -->
+    <div class="main">
+        <!-- navbar -->
+        <nav>
+            <div class="nav-left">
+                <img src="{% static 'main/images/Class.jpg' %}" alt="class">
+            </div>
+            <div class="nav-right">
+                <ol>
+                    <li><a href="#" class="underline-hover">Home</a></li>
+                    <li><a href="#" class="underline-hover">Features</a></li>
+                    <li><a href="#" class="underline-hover">Download</a></li>
+                    <li><a href="#" class="underline-hover">Support</a></li>
+                    <li><a href="{% url 'Login' %}" class="underline-hover">Login</a></li>
+                    <li><a class="btn-signup" href="{% url 'Register' %}">Signup</a></li>
+                </ol>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="left-container">
+                <h1>take your time</h1>
+                <h1>and learn from</h1>
+                <h1>anywhere</h1>
+                <div class="paragraph">
+                    <p>The world’s most trusted open-source learning
+                        management system. A easy tool helping educators.
+                        efficiently manage and assess progress.</p>
+                </div>
+                <div>
+                    <button class="btn-start">Get Started</button>
+                </div>
+            </div>
+            <div class="right-container">
+                <img src="{% static 'main/images/class1.jpg' %}" alt="">
+            </div>
+        </div>
+        <div class="page2">
+            <div class="our-achievement">
+                <h1>our achievements</h1>
+                <h3>with our super power we have reached this</h3>
+            </div>
+            <div class="collections">
+                <div class="school">
+                    <img src="{% static 'main/images/school.jpg' %}" alt="">
+                    <div class="achicv">
+                        <h1>125+</h1>
+                        <h5>Schools</h5>
+                    </div>
+                </div>
+                <div class="school">
+                    <img src="{% static 'main/images/project.png' %}" alt="">
+                    <div class="achicv">
+                        <h1>15+</h1>
+                        <h5>projects</h5>
+                    </div>
+                </div>
+                <div class="school">
+                    <img src="{% static 'main/images/graduate.png' %}" alt="">
+                    <div class="achicv">
+                        <h1>1250+</h1>
+                        <h5>Students</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="features">
+                <h1>powerful features</h1>
+                <p>Special features which help you keep students on wack
+                    ‘and engaged during class time.</p>
+            </div>
+            <div class="student-class">
+                <div class="classimage">
+                    <img src="{% static 'main/images/student-class.jpg' %}" alt="">
+                </div>
+                <div class="class-container">
+                    <h1>view Student screen</h1>
+                    <p>Teacher can see everything your students are doing on their
+                    computers. Be able to see at a glance who is on track and
+                    who needs some extra help.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+            <div class="assignment">
+                <div class="assignment-container">
+                    <h1>assignment & quize</h1>
+                    <p>Teacher can create a assignment or quiz or in Classroom
+                    and also schedule it to post later, add a due date and time
+                    and add attachments.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="assignimg">
+                    <img src="{% static 'main/images/assignment.jpg' %}" alt="">
+                </div>
+            </div>
+            <div class="student-class">
+                <div class="classimage">
+                    <img src="{% static 'main/images/automatic-garding.jpg' %}" alt="">
+                </div>
+                <div class="class-container">
+                    <h1>automatically garding</h1>
+                    <p>It automatically grade the quiz and import the grades into
+                    Classroom. Students can see their grades after teacher
+                    review their answers.</p>
+                    <button>Learn More</button>
+                </div>
+            </div>
+        </div>
+        <div class="page3">
+            <div class="head">
+                <h1>They all are loved us</h1>
+                <h2>We have been working with clients around the world</h2>
+            </div>
+            <div class="description">
+                    <div class="descri-about">
+                        <h1>Easy Collaborating </h1>
+                        <p>Its platform allows users to plan
+                            through many functions from video
+                            conferencing to creating.</p>
+                    <div class="descri-info">
+                    <div class="photo">
+                        <img src="{% static 'main/images/model.jpg' %}" alt="">
+                    </div>
+                    <div class="descri">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                 </div>
+                    </div>
+                    <div class="descri-about">
+                        <h1>very Efficient </h1>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus, incidunt earum repellendus dolores culpa</p>
+                    <div class="descri-info">
+                    <div class="photo">
+                        <img src="{% static 'main/images/model.jpg' %}" alt="">
+                    </div>
+                    <div class="descri">
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+        <footer>
+            <div class="firstdiv">
+                <div class="logo">
+                    <img src="{% static 'main/images/Class.jpg' %}" alt="">
+                </div>
+                <h1>get in touch</h1>
+                <h4>Questions of feedback?</h4>
+                <h4>we'd love to hear from you.</h4>
+                <div class="icondiv">
+                    <div class="icon facebook">
+                        <img src="{% static 'main/images/facebook.png' %}" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="{% static 'main/images/instagram.png' %}" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="{% static 'main/images/linkedin.png' %}" alt="">
+                    </div>
+                    <div class="icon">
+                        <img src="{% static 'main/images/twitter.png' %}" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="seconddiv">
+                <h1>Products</h1>
+                <h4>Student Screen</h4>
+                <h4>Remort Access</h4>
+                <h4>Garding</h4>
+                <h4>Monitoring</h4>
+            </div>
+            <div class="thirddiv">
+                <h1>Support</h1>
+                <h4>Help desk</h4>
+                <h4>Contact</h4>
+                <h4>Privacy Center</h4>
+                <h4>FAQ</h4>
+            </div>
+            <div class="fourdiv">
+                <h1>Available on</h1>
+                <div class="avai-icon">
+                    <img src="{% static 'main/images/google-play.png' %}" alt="play">
+                    <img src="{% static 'main/images/app-store.png' %}" alt="app">
+                </div>
+
+            </div>
+            
+        </footer>
+        <div class="about">
+                <hr>
+                <h1>Desiged by Gaurav kumar 👦</h1>
+        </div>
+    </div>
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

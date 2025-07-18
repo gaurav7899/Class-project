@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="{% static 'main/images/favicon-32x32.png' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'main/css/login.css' %}">
+    <title>login page</title>
+</head>
+<body>
+    <div class="main">
+        <h1>class. Form</h1>
+        <div class="form-data">
+            <form action="" method="post">
+                {{form}}
+            </form>
+        </div>
+    </div>
+</body>
+</html>
